@@ -5,7 +5,7 @@
       <div class="image-list" v-if="!loading">
         <image-item
           v-for="item in items"
-          :key="item.image"
+          :key="item.id"
           :item="item"
           :handlePreview="handlePreview" />
       </div>

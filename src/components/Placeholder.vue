@@ -42,6 +42,12 @@ export default {
     grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
     column-gap: 50px;
 
+    @include mobile {
+      padding-left: 0;
+      padding-right: 0;
+      margin-top: 30px;
+    }
+
     .loader-item {
       background-color: $grayF5;
       border-radius: 5px;

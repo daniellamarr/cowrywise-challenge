@@ -5,8 +5,12 @@
       <div class="image-list" v-if="!loading">
         <image-item
           v-for="item in items"
-          :key="item.image"
-          :item="item" />
+          :key="item.id"
+          :item="item"
+          :handlePreview="handlePreview" />
+        <div class="notFound" v-if="items && items.length === 0">
+          Oops! We could not find images related to {{query}}
+        </div>
       </div>
       <placeholder v-else />
     </div>

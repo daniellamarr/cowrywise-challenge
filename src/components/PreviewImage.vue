@@ -50,14 +50,46 @@ export default {
       display: flex;
       justify-content: center;
 
+      @include mobile {
+        padding: 30px;
+        padding-top: 0;
+        align-items: center;
+      }
+
+      @include tablet {
+        padding: 80px;
+        padding-top: 0;
+        align-items: center;
+      }
+
       .preview-details {
         .image {
           height: 70vh;
+
+          @include mobile {
+            height: 50%;
+            width: 100%;
+            margin-bottom: -6px;
+          }
+
+          @include tablet {
+            height: 50%;
+            width: 100%;
+            margin-bottom: -6px;
+          }
 
           img {
             height: 100%;
             border-top-left-radius: 5px;
             border-top-right-radius: 5px;
+
+            @include mobile {
+              width: 100%;
+            }
+
+            @include tablet {
+              width: 100%;
+            }
           }
         }
 

@@ -20,6 +20,15 @@
   padding-left: 120px;
   padding-right: 120px;
   height: 100px;
+
+  @include mobile {
+    padding: 30px;
+    height: 70px;
+  }
+
+  @include tablet {
+    padding: 50px;
+  }
 }
 
 .image-list {
@@ -32,5 +41,21 @@
   grid-auto-rows: 50px;
   grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
   column-gap: 50px;
+
+  @include mobile {
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 30px;
+  }
+}
+
+.notFound {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 100px;
+
+  @include mobile {
+    font-size: 13px;
+  }
 }
 </style>

@@ -65,6 +65,10 @@ export default {
     h1 {
       color: $dark-blue;
 
+      @include mobile {
+        font-size: 20px;
+      }
+
       span {
         color: $light-blue2;
       }
